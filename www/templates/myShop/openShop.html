@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ionic">
+<head>
+	<meta charset="UTF-8">
+ 	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,height=device-height">
+	<title>申请开店</title>
+	<link rel="stylesheet" href="../css/ionic.min.css">
+	<link rel="stylesheet" href="../css/styles.css">
+	<script src="../js/ionic.bundle.js"></script>
+	<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+	
+</head>
+<body>
+	<div class="myShop">
+		<div class="bar bar-header bar-positive">
+	  
+	  <div class="h1 title">申请开店</div>
+	  <!-- <button class="button button-icon icon ">下一步</button>  --> 
+	</div>
+	<!-- header -->
+	<ion-content style="margin-top:70px;">
+		<form action="">
+			<div class="list">
+			  <label class="item item-input">
+			    <span class="input-label">店铺名称</span>
+			    <input type="text" placeholder="4-30字符 （必填）">
+			  </label>
+			  <label class="item item-input">
+			    <span class="input-label">详细地址</span>
+
+			    <input type="text" placeholder="4-30字符的详细地址 （必填）">
+			    <i class="icon ion-ios-arrow-right "></i>
+			  </label>
+			  <br>
+			  <ion-item ui-sref="#" class="item-icon-right" nav-transition="ios">	
+			  	<span>服务类型</span>
+				<small style="color:#aaa;">请选择 (必填)</small>
+				<i class="icon ion-ios-arrow-right arrow-s"></i>
+			  </ion-item>
+			  <label class="item item-input">
+			    <span class="input-label">负&nbsp;&nbsp;责&nbsp;&nbsp;人</span>
+
+			    <input type="text" placeholder="2-6字汉字或字母 （必填）">
+			  </label>
+			  <label class="item item-input">
+			    <span class="input-label">营业时间</span>
+
+			    <input type="text" placeholder="填写营业时间">
+			  </label>
+			  <ion-toggle  toggle-class="toggle-positive">上门服务</ion-toggle>
+
+			  <ion-toggle  toggle-class="toggle-positive">预约服务</ion-toggle>
+
+			  <label class="item item-input" >
+			    <span class="input-label">服务描述</span>
+			    <textarea placeholder="店铺的主营项目，当前规模，经营理念等，以便了解您的店铺，增加点击率（70字以内）"></textarea>
+			  </label>
+			   
+			  <br>
+			  <label class="item item-input" style="height:94px;">
+			    <span class="input-label" >营业执照</span>
+			    <div class="myShopPhoto">
+			    	<i class="icon ion-android-camera"></i>
+					<br>
+					添加照片
+			    </div>	
+				<ion-scroll direction="x">
+					<div class="row" >
+						<div class="myShopDashBox">
+							选填
+						</div>
+						<div class="myShopDashBox">
+							选填
+						</div>
+						<div class="col-33 goodsNewImg" >
+							<img src="../images/1.jpg"  >
+						</div>
+						<div class="col-33 goodsNewImg" >
+							<img src="../images/avatar.png"  >
+						</div>
+						<div class="col-33 goodsNewImg" >
+							<img src="../images/11.jpg"  >
+						</div>
+						
+					</div>
+				</ion-scroll>
+			  </label>
+
+			  <label class="item item-input" style="height:94px;">
+			    <span class="input-label" >门&nbsp;&nbsp;头&nbsp;&nbsp;照</span>
+			    <div class="myShopPhoto">
+			    	<i class="icon ion-android-camera"></i>
+					<br>
+					添加照片
+			    </div>	
+				<ion-scroll direction="x">
+					<div class="row">
+						<div class="myShopDashBox">
+							必填
+						</div>
+						<div class="myShopDashBox">
+							必填
+						</div>
+					</div>
+				</ion-scroll>
+			  </label>
+			  <!-- openShop -->
+			  
+			  <div class="padding" style="margin-top:30px;">
+			  	<button class="button button-block button-positive " >
+					完成
+				</button>
+			  </div>
+			</div>
+			<!-- list -->
+		</form>
+		<!-- form -->
+	</ion-content>
+	
+	</div>
+<script>
+	$(document).ready(function() {
+		$('small').click(function() {
+			alert(321);
+		})
+	})
+</script>
+</body>
+</html>

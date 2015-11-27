@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ionic">
+<head>
+	<meta charset="UTF-8">
+ 	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,height=device-height">
+	<title>新增鸡毛商品</title>
+	<link rel="stylesheet" href="../css/ionic.min.css">
+	<link rel="stylesheet" href="../css/styles.css">
+	<script src="../js/ionic.bundle.js"></script>
+</head>
+<body>
+	<div class="goodsNew">
+		<div class="bar bar-header bar-positive">
+	  <button class="button button-icon icon ">取消</button>
+	  <div class="h1 title">新增鸡毛商品</div>  
+	</div>
+	<!-- header -->
+	<ion-content style="margin-top:40px;">
+		<div class="notPass" style="display:none;">
+			
+			亲，由于您商家售价太高，所以没有审核通过，
+			<br>
+			请您修改您的商品价格
+			<i class="icon ion-android-cancel"></i>
+		</div>
+		<form action="">
+			<ion-scroll direction="x">
+				<div class="row" >
+					<div class="col-offset-33 col-33 goodsNewPhoto" >
+						<i class="icon ion-android-camera"></i>
+						<br>
+						添加照片
+					</div>
+					<div class="col-33 goodsNewImg" >
+						<img src="../images/1.jpg"  >
+					</div>
+					<div class="col-33 goodsNewImg" >
+						<img src="../images/1.jpg"  >
+					</div>
+					<div class="col-33 goodsNewImg" >
+						<img src="../images/1.jpg"  >
+					</div>
+					<div class="col-33 goodsNewImg" >
+						<img src="../images/1.jpg"  >
+					</div>
+					<div class="col-33 goodsNewImg" >
+						<img src="../images/1.jpg"  >
+					</div>
+					<div class="col-33 goodsNewImg" >
+						<img src="../images/1.jpg"  >
+					</div>
+				</div>
+			</ion-scroll>
+	<!-- add photo -->
+
+	<div class="list">
+	  <label class="item item-input">
+	    <span class="input-label">商品名称 </span>
+
+	    <input type="text" placeholder="输入商品名称" value="张江高科" disabled style="background:#fff;">
+	  </label>
+	  <br>
+	  <label class="item item-input">
+	    <span class="input-label">兑 换 价 </span>
+
+	    <input type="text" value="99999999" disabled="" style="background:#fff;">
+	    <span class="input-label">鸡毛</span>
+	  </label>
+
+	  <label class="item item-input">
+	    <span class="input-label">店 内 价 </span>
+
+	    <input type="text" value="99999999" disabled style="background:#fff;">
+	    <span class="input-label">元</span>
+	  </label>
+	  <br>
+	  <div class="goodsCB_o">
+	  	<label class="item item-input " style="padding-right:4%;">
+		   <span class="input-label">有  效  期 </span>
+
+		   <input style="background:#fff;" disabled type="text" placeholder="输入商品库存数" value="2015.1.1-2016.1.1 ">
+		   <span class="input-label">长期有效</span>
+		</label>
+		<label class="checkbox goodsCB_i">
+		   <input type="checkbox" >
+		</label>
+
+	  </div>
+	 <div class="goodsCB_o">
+	 	<label class="item item-input" style="padding-right:4%;">
+		    <span class="input-label">库&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;存 </span>
+
+		    <input style="background:#fff;" disabled type="text" placeholder="输入商品库存数" value="2015.1.1-2016.1.1">
+		    <span class="input-label" style="">长期有效</span>
+	  	</label>
+	  	<label class="checkbox goodsCB_i">
+		   <input type="checkbox">
+		</label>
+	 </div>
+	 <br> 
+
+	  <div class="goodsCB_o">
+	  	<label class="item item-input">
+		   <span class="input-label">兑换方式 </span>
+		   
+		   
+		</label>
+		<label class="checkbox goodsCB_i">
+			<input type="radio" name="1">
+			<span class="input-label" >上门送</span>
+		</label>
+
+		<label class="checkbox goodsCB_i goodsCB_i_2">
+			<input type="radio" name="1">
+			<span class="input-label" >当面兑</span>
+			<!-- 上门送 -->
+		</label>
+	  </div>
+	  <br>
+	  <label class="item item-input" style="height:94px;">
+	    <span class="input-label" >商品详情 </span>
+	    
+
+	    <textarea rows="5" cols="20" style="padding-right:4%; background:#fff;" disabled>1234123412341234123412341234123412341234123412341234123412341234123412341234123412341234</textarea>
+	  </label>
+	</div>
+	<!-- form -->
+		</form>
+		
+	</ion-content>
+	<div></div>
+	<div class="bar bar-footer bar-positive">
+		  <a class="button bar-positive">保存</a>
+		  <a class="button bar-positive">提交审核</a>	
+	</div>
+	</div>
+</body>
+</html>
